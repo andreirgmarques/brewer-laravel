@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>{{$titulo or "Brewer"}}</title>
+    <title>{{$titulo}}</title>
 
     <link rel="stylesheet" type="text/css" href="{{url("layout/stylesheets/vendors.min.css")}}"/>
     <link rel="stylesheet" type="text/css" href="{{url("layout/stylesheets/algaworks.min.css")}}"/>

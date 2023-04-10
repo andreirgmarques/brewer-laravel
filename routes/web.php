@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,9 +14,7 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-
-Auth::routes();
+Auth::routes(['register' => false]);
 Route::get("/logout", "Auth\LoginController@logout");
 
 Route::get("/", "DashboardController@dashboard");
